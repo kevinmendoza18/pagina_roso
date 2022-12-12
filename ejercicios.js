@@ -84,15 +84,19 @@ function while1() {
 /************************************************************************************************************************************************/
 
 function while2() {
-    var cant = 0;
-    var anos = 0;
-    var edad = 0;
-    while (anos != -1) {
-        anos = parseInt(prompt("ingrese las edades"));
-        edad += anos;
-        cant++
+    var cont = 0;
+    var sumedad = 0;
+    var edad = 1;
+    while (edad != -1) {
+        edad = parseInt(prompt("ingrese las edades"));
+        sumedad += edad;
+        cont++;
+        
     }
-    promedio = edad / cant + 1;
+    edad++;
+    cont--;
+    sumedad++;
+    promedio = sumedad / cont ;
     document.getElementById("while2").innerHTML = "el promedio de las edades es " + promedio;
 }
 
